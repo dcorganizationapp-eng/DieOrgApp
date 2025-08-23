@@ -13,8 +13,47 @@ struct ProfileView: View {
             //Header
             VStack {
                 HStack {
-                    //pic and stats
+                    Image("jim")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 80, height: 80)
+                    .clipShape(Circle())
+                    
+                    Spacer()
+                    
+                    HStack(spacing: 8) {
+                        VStack {
+                            Text("3")
+                                .font(.subheadline)
+                                .fontWeight(.semibold)
+                            
+                            Text("Posts")
+                                .font(.footnote)
+                        }
+                        .frame(width: 76)
+                        
+                        VStack {
+                            Text("3")
+                                .font(.subheadline)
+                                .fontWeight(.semibold)
+                            
+                            Text("Followers")
+                                .font(.footnote)
+                        }
+                        .frame(width: 76)
+                        
+                        VStack {
+                            Text("3")
+                                .font(.subheadline)
+                                .fontWeight(.semibold)
+                            
+                            Text("Following")
+                                .font(.footnote)
+                        }
+                        .frame(width: 76)
+                    }
                 }
+                .padding(.horizontal)
                 
                 
                 //name and bio
